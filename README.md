@@ -12,10 +12,11 @@ The Smart Transit Dashboard is a web application designed to provide real-time p
 
 ## Technologies Used
 - **Frontend**: React.js, Tailwind CSS, Leaflet.js (for maps)
-- **Backend**: Node.js, Express.js, PostgreSQL
+- **State Management**: React Context API or Redux
+- **Backend**: Firebase (Firestore for database, Functions for serverless API)
 - **Machine Learning**: Python (Scikit-learn, TensorFlow), Flask API for ML integration
 - **APIs**: Google Transit API, OpenWeather API
-- **Deployment**: Docker, AWS/GCP
+- **Deployment**: Vercel, Firebase Hosting
 
 ## Weekly Development Goals
 
@@ -24,17 +25,17 @@ The Smart Transit Dashboard is a web application designed to provide real-time p
 - Research and evaluate the APIs (Google Transit API, OpenWeather API) to understand their capabilities and limitations.
 - Define the project scope, finalize core features, and create a rough UI wireframe.
 
-### Week 2: Backend Development
-- Implement an Express.js server and establish API routes.
-- Integrate the Google Transit API to fetch real-time transit data.
-- Set up a PostgreSQL database, define the schema, and establish a connection.
-- Develop basic database operations such as storing and retrieving transit data.
+### Week 2: Frontend Development (React Setup)
+- Set up a React project using Vite or Create React App.
+- Install and configure Tailwind CSS for styling.
+- Implement basic routing with React Router.
+- Create UI components such as search bar, navigation, and route selection.
 
-### Week 3: Frontend Development
-- Create the initial UI layout using React and Tailwind CSS.
-- Implement search functionality for transit routes.
-- Display fetched real-time transit data in an intuitive and user-friendly manner.
-- Ensure basic responsiveness for different screen sizes.
+### Week 3: Integrating APIs & Data Fetching
+- Fetch real-time transit data using Google Transit API.
+- Store and manage fetched data using React Context API or Redux.
+- Display transit data in a structured and user-friendly way.
+- Implement basic error handling for API failures.
 
 ### Week 4: Map & Data Visualization
 - Integrate Leaflet.js to display an interactive transit map.
@@ -44,22 +45,22 @@ The Smart Transit Dashboard is a web application designed to provide real-time p
 ### Week 5: Machine Learning Integration (Basic Model)
 - Gather and preprocess transit and weather data for model training.
 - Develop a basic machine learning model using Scikit-learn to predict delays.
-- Set up a Flask API to serve ML model predictions to the backend.
-- Implement an endpoint for retrieving predicted delays and displaying them in the frontend.
+- Set up a Flask API to serve ML model predictions to the frontend.
+- Implement API calls in React to retrieve and display predictions.
 
 ### Week 6: Enhancing ML Model & User Features
 - Improve the ML model by incorporating additional factors such as time of day, historical trends, and traffic conditions.
-- Implement user authentication and allow users to save preferred routes.
+- Implement user authentication with Firebase Authentication.
 - Develop a notification system to alert users of delays, cancellations, or alternative routes.
 
 ### Week 7: Testing & Optimization
-- Conduct end-to-end testing of both the frontend and backend.
-- Optimize database queries and API calls to improve performance and reduce latency.
+- Conduct end-to-end testing of the React frontend.
+- Optimize API calls and state management to improve performance.
 - Address UI/UX feedback, ensuring the application is intuitive and user-friendly.
 - Fix any bugs and refine the transit prediction accuracy.
 
 ### Week 8: Deployment & Documentation
-- Deploy the application to a cloud platform such as AWS or GCP.
+- Deploy the application using Vercel or Firebase Hosting.
 - Set up CI/CD pipelines for automated deployment and updates.
 - Write detailed documentation, including API usage, setup instructions, and troubleshooting guides.
 - Finalize the README with installation steps and usage examples.
