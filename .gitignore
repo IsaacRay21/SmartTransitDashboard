@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Python dependencies for ML
+__pycache__/
+*.pyc
+venv/
+
+# Database
+*.sqlite
+*.db
+
+# Build files
+build/
+dist/
+
+# Deployment files
+*.pem
+*.crt
+*.key
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml

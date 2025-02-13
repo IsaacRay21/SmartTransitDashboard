@@ -1,108 +1,75 @@
-# SmartTransitDashboard
+# Smart Transit Dashboard
 
-Overview
-
+## Overview
 The Smart Transit Dashboard is a web application designed to provide real-time public transit updates, predict delays based on machine learning, and offer smart route suggestions. The goal is to enhance public transportation in Minnesota, where buses often experience delays, especially in extreme weather conditions. The application will incorporate various technologies, including real-time APIs, machine learning for predictive analysis, and an intuitive user interface.
 
-Features
+## Features
+- **Real-time Transit Updates**: Fetch live transit data from Google Transit API.
+- **Delay Prediction with Machine Learning**: Utilize weather, time, and historical data to estimate transit delays.
+- **Route Optimization**: Suggest the best routes based on real-time data and machine learning insights.
+- **User Alerts & Notifications**: Notify users of delays, cancellations, and alternative routes.
+- **Interactive Map Interface**: Display transit routes and vehicle locations dynamically.
 
-Real-time Transit Updates: Fetch live transit data from Google Transit API.
+## Technologies Used
+- **Frontend**: React.js, Tailwind CSS, Leaflet.js (for maps)
+- **Backend**: Node.js, Express.js, PostgreSQL
+- **Machine Learning**: Python (Scikit-learn, TensorFlow), Flask API for ML integration
+- **APIs**: Google Transit API, OpenWeather API
+- **Deployment**: Docker, AWS/GCP
 
-Delay Prediction with Machine Learning: Utilize weather, time, and historical data to estimate transit delays.
+## Weekly Development Goals
 
-Route Optimization: Suggest the best routes based on real-time data and machine learning insights.
+### Week 1: Project Setup & Research
+- Set up the GitHub repository and initialize project structure.
+- Research and evaluate the APIs (Google Transit API, OpenWeather API) to understand their capabilities and limitations.
+- Define the project scope, finalize core features, and create a rough UI wireframe.
 
-User Alerts & Notifications: Notify users of delays, cancellations, and alternative routes.
+### Week 2: Backend Development
+- Implement an Express.js server and establish API routes.
+- Integrate the Google Transit API to fetch real-time transit data.
+- Set up a PostgreSQL database, define the schema, and establish a connection.
+- Develop basic database operations such as storing and retrieving transit data.
 
-Interactive Map Interface: Display transit routes and vehicle locations dynamically.
+### Week 3: Frontend Development
+- Create the initial UI layout using React and Tailwind CSS.
+- Implement search functionality for transit routes.
+- Display fetched real-time transit data in an intuitive and user-friendly manner.
+- Ensure basic responsiveness for different screen sizes.
 
-Technologies Used
+### Week 4: Map & Data Visualization
+- Integrate Leaflet.js to display an interactive transit map.
+- Plot transit routes and vehicle locations dynamically on the map.
+- Implement filters and overlays to allow users to customize their views.
 
-Frontend: React.js, Tailwind CSS, Leaflet.js (for maps)
+### Week 5: Machine Learning Integration (Basic Model)
+- Gather and preprocess transit and weather data for model training.
+- Develop a basic machine learning model using Scikit-learn to predict delays.
+- Set up a Flask API to serve ML model predictions to the backend.
+- Implement an endpoint for retrieving predicted delays and displaying them in the frontend.
 
-Backend: Node.js, Express.js, PostgreSQL
+### Week 6: Enhancing ML Model & User Features
+- Improve the ML model by incorporating additional factors such as time of day, historical trends, and traffic conditions.
+- Implement user authentication and allow users to save preferred routes.
+- Develop a notification system to alert users of delays, cancellations, or alternative routes.
 
-Machine Learning: Python (Scikit-learn, TensorFlow), Flask API for ML integration
+### Week 7: Testing & Optimization
+- Conduct end-to-end testing of both the frontend and backend.
+- Optimize database queries and API calls to improve performance and reduce latency.
+- Address UI/UX feedback, ensuring the application is intuitive and user-friendly.
+- Fix any bugs and refine the transit prediction accuracy.
 
-APIs: Google Transit API, OpenWeather API
+### Week 8: Deployment & Documentation
+- Deploy the application to a cloud platform such as AWS or GCP.
+- Set up CI/CD pipelines for automated deployment and updates.
+- Write detailed documentation, including API usage, setup instructions, and troubleshooting guides.
+- Finalize the README with installation steps and usage examples.
 
-Deployment: Docker, AWS/GCP
+## Future Enhancements
+- Implement reinforcement learning to further optimize route suggestions.
+- Introduce crowdsourced user reports for real-time transit updates.
+- Expand coverage to multiple cities beyond Minnesota.
 
-Weekly Development Goals
+---
 
-Week 1: Project Setup & Research
-
-Set up GitHub repository and initialize project structure.
-
-Research APIs (Google Transit API, OpenWeather API) and understand data format.
-
-Define project scope and finalize core features.
-
-Week 2: Backend Development
-
-Implement Express.js server and API routes.
-
-Integrate Google Transit API for real-time transit data.
-
-Set up PostgreSQL database and define schema for transit data storage.
-
-Week 3: Frontend Development
-
-Create basic UI layout using React and Tailwind CSS.
-
-Implement search functionality for transit routes.
-
-Display real-time transit data in a user-friendly format.
-
-Week 4: Map & Data Visualization
-
-Integrate Leaflet.js for interactive maps.
-
-Display transit routes and vehicle locations on the map.
-
-Implement route filtering options.
-
-Week 5: Machine Learning Integration (Basic Model)
-
-Collect transit and weather data for model training.
-
-Implement a simple ML model for delay predictions using Scikit-learn.
-
-Set up a Flask API to serve ML predictions to the backend.
-
-Week 6: Enhancing ML Model & User Features
-
-Improve ML model accuracy by adding more features (time of day, historical trends).
-
-Implement user accounts and saved routes.
-
-Add notification system for delay alerts.
-
-Week 7: Testing & Optimization
-
-Conduct end-to-end testing of frontend and backend.
-
-Optimize database queries and API calls for better performance.
-
-Fix UI/UX issues and refine overall design.
-
-Week 8: Deployment & Documentation
-
-Deploy the application to a cloud platform (AWS/GCP).
-
-Set up CI/CD for automatic updates.
-
-Write detailed documentation and finalize the README.
-
-Future Enhancements
-
-Implement reinforcement learning for better route suggestions.
-
-Introduce crowdsourced user reports for real-time feedback.
-
-Expand coverage to multiple cities beyond Minnesota.
-
-How to Run the Project
-
-(To be filled out once development begins)
-
+### How to Run the Project
+*(To be filled out once development begins)*
